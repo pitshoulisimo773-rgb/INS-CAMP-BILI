@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INS - Complexe Scolaire Camp Bili</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    /* --- MENU ROUGE AVEC LOGO --- */
+    nav {
+      background-color: #c62828;
+      padding: 0.5rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 60px;
+      width: 60px;
+      border-radius: 10%;
+      background-color: white;
+      padding: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    }
+
+    .logo span {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+    }
+
+    .menu-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .menu-links a:hover {
+      color: #ffeb3b;
+    }
+
+    header {
+      background: url('fond-ecole.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      position: relative;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.6);
+    }
+
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.3rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    main {
+      padding: 2rem 10%;
+      line-height: 1.6;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #0b3d91;
+      border-left: 5px solid #f9a825;
+      padding-left: 10px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* --- SECTION CONTACT --- */
+    .contact {
+      text-align: center;
+    }
+
+    .whatsapp-btn, .share-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 10px 5px;
+      transition: background 0.3s;
+      cursor: pointer;
+    }
+
+    .whatsapp-btn {
+      background-color: #25D366;
+      color: white;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #1ebe5a;
+    }
+
+    .share-btn {
+      background-color: #ff5722;
+      color: white;
+    }
+
+    .share-btn:hover {
+      background-color: #e64a19;
+    }
+
+    footer {
+      background-color: #0b3d91;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        padding: 1rem;
+      }
+      .menu-links a {
+        display: block;
+        margin: 10px 0;
+      }
+      nav {
+        flex-direction: column;
+      }
+      .logo img {
+        height: 50px;
+        width: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Menu de navigation avec logo -->
+  <nav>
+    <div class="logo">
+      <img src="logo-ins.png" alt="Logo INS">
+      <span>INS Camp Bili</span>
+    </div>
+    <div class="menu-links">
+      <a href="#accueil">Accueil</a>
+      <a href="#roles">Rôles</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- En-tête -->
+  <header id="accueil">
+    <h1>INS - Complexe Scolaire Camp Bili</h1>
+    <p>Une école connectée pour un avenir numérique et inclusif</p>
+  </header>
+
+  <!-- Contenu principal -->
+  <main>
+    <section>
+      <h2>À propos de l’INS</h2>
+      <p>
+        Une <strong>Instant Network School (INS)</strong> a pour rôle de fournir un accès à l’éducation numérique et à Internet dans les zones touchées par les crises humanitaires (comme les camps de réfugiés ou les zones isolées).
+      </p>
+      <p>
+        Elle permet aux apprenants, enseignants et communautés locales de suivre des cours en ligne, de s’initier aux TIC (Technologies de l’Information et de la Communication) et de développer des compétences utiles pour leur avenir.
+      </p>
+    </section>
+
+    <section id="roles">
+      <h2>📚 Rôles spécifiques d’une INS</h2>
+      <ul>
+        <li><strong>Faciliter l’apprentissage numérique :</strong> Mettre à disposition des tablettes, ordinateurs et connexion Internet pour permettre le suivi des cours en ligne.</li>
+        <li><strong>Renforcer les capacités des enseignants :</strong> Former les enseignants à l’utilisation des outils numériques et des plateformes éducatives.</li>
+        <li><strong>Promouvoir l’inclusion et l’égalité d’accès :</strong> Offrir à tous les jeunes (filles, garçons, réfugiés, communautés d’accueil) la même opportunité d’apprendre.</li>
+        <li><strong>Encourager l’autonomie et l’innovation :</strong> Aider les apprenants à développer la créativité, la recherche, et les compétences numériques pratiques.</li>
+        <li><strong>Soutenir la communauté éducative :</strong> Servir d’espace communautaire pour la recherche, la formation, et les activités éducatives (numérisation, jeux pédagogiques, projets collaboratifs, etc.).</li>
+        <li><strong>Contribuer à la continuité de l’éducation en situation de crise :</strong> Garantir que les enfants et jeunes puissent continuer à apprendre même dans des conditions difficiles.</li>
+      </ul>
+    </section>
+
+    <section id="galerie">
+      <h2>📸 Galerie d’activités</h2>
+      <p>Voici quelques images illustrant les activités réalisées au sein de l’INS du Complexe Scolaire Camp Bili :</p>
+      <div class="gallery">
+        <img src="activite1.jpg" alt="Cours en ligne à l'INS">
+        <img src="activite2.jpg" alt="Formation des enseignants">
+        <img src="activite3.jpg" alt="Jeux pédagogiques avec les apprenants">
+        <img src="activite4.jpg" alt="Numérisation de leçons">
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>📞 Contact</h2>
+      <p>Pour plus d’informations, contactez Coach Pitshou LISIMO  l’INS du Complexe Scolaire Camp Bili :</p>
+      <a class="whatsapp-btn" href="https://wa.me/243818410000" target="_blank">💬 Contacter sur WhatsApp</a>
+      <button class="share-btn" onclick="partagerSite()">🔗 Partager ce site</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Coach Pitshou LISIMO 2025 INS - Complexe Scolaire Camp Bili | Développement numérique pour tous</p>
+  </footer>
+
+  <script>
+    function partagerSite() {
+      const url = window.location.href;
+      navigator.clipboard.writeText(url)
+        .then(() => {
+          alert("Lien copié dans le presse-papier ! Vous pouvez le partager avec vos proches.");
+        })
+        .catch(() => {
+          alert("Impossible de copier le lien automatiquement. Copiez-le manuellement : " + url);
+        });
+    }
+  </script>
+</body>
+</html>
+
